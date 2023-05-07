@@ -77,7 +77,7 @@ gallery_tab, upload_tab, url_tab = st.tabs(["Gallery", "Upload", "Image URL"])
 with gallery_tab:
     options = list(gallery_dict.keys())
     file_name = st.selectbox("Select Art", 
-                            options=options, index=options.index("Mona Lisa (Leonardo da Vinci)"))
+                            options=options, index=0)
     file = gallery_dict[file_name]
 
     if st.session_state.get("file_uploader") is not None:
